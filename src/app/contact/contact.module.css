@@ -44,3 +44,10 @@
     border-radius: 5px;
     cursor: pointer;
 }
+
+
+@media screen and (max-wdith: 768px) {
+    .container{
+        flex-direction: column;
+    }
+}

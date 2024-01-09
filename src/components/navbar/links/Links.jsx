@@ -1,7 +1,8 @@
 "use client"
 import { useState } from 'react';
-import styles from './links.module.css'
+import styles from './links.module.css';
 import NavLinks from './navlinks/NavLinks';
+import Image from 'next/image';
 
 
 const links = [
@@ -44,7 +45,7 @@ const Links = () => {
                 <NavLinks item={{title:"Login", path:"/login"}} />
                 )}
         </div>
-        <button className={styles.menuButton} onClick={() => setOpen(prev => !prev)}>Menu</button>
+        <Image src="/menu.png" width={30} height={30} alt="hamberger icons" onClick={() => setOpen(prev => !prev)} className={styles.menuButton}/>
         {
             open && <div className={styles.mobileLinks}>
                 {links.map((link, i) => <NavLinks item={link} key={i} />)}

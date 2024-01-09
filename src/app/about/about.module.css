@@ -48,3 +48,14 @@
 .img{
     object-fit: contain;
 }
+
+@media screen and (max-wdith: 768px) {
+    .container{
+        flex-direction: column;
+    }
+    .boxes{
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+}
