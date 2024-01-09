@@ -3,16 +3,34 @@ import styles from './about.module.css'
 
 const AboutPage = () => {
   return (
-    <div>
-        <Image src="/about.png" alt="image" width={500} height={500} priority />
-      <div className={styles.imgContainer}>
-        <Image 
-          src="https://images.pexels.com/photos/18013547/pexels-photo-18013547/free-photo-of-a-woman-in-a-green-dress-sitting-on-a-wooden-bench.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
-          alt="image" 
-          fill 
-        />
+      <div className={styles.container}>
+        <div className={styles.textContainer}>
+          <h2 className={styles.subTitle}>About Our Company</h2>
+          <h1 className={styles.title}>
+            We Create Ideas into reality
+          </h1>
+          <p className={styles.desc}>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed sapiente natus esse exercitationem? Saepe ut facere dolorem totam optio necessitatibus nihil accusantium! Quas fugiat vel quos vero! Officia, debitis totam!
+          </p>
+          <div className={styles.boxes}>
+            <div className={styles.box}>
+              <h1>10K</h1>
+              <p>Years of Experience</p>
+            </div>
+            <div className={styles.box}>
+              <h1>10K</h1>
+              <p>Years of Experience</p>
+            </div>
+            <div className={styles.box}>
+              <h1>10K</h1>
+              <p>Years of Experience</p>
+            </div>
+          </div>
+        </div>
+        <div className={styles.imgContainer}>
+          <Image src={"/about.png"} alt='about out company image' fill className={styles.img} />
+        </div>
       </div>
-    </div>
   )
 }
 
