@@ -1,7 +1,12 @@
+import Link from "next/link"
 
 const AboutPage = () => {
   return (
-    <div>AboutPage</div>
+    <div>
+      <Link href={'/'}>Home</Link>
+      <Link href={'/about/contact'} className="text-7xl text-green-600">Contact</Link>
+      
+    </div>
   )
 }
 
